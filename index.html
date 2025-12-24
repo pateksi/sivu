@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etusivu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+
+<link rel="icon" href="kawa.ico">
+</head>
+
+<body>
+    <canvas id="star-canvas"></canvas>
+<script src="script.js"></script>
+
+<a href="index.html" class="logo-link">
+    <img src="meikä.jpg" alt="Logo" class="logo">
+</a>
+
+
+<div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  
+  <nav class="side-menu" id="sideMenu">
+    
+    <a href="info/index.html" class="button-link">Tietoa minusta & FAQ</a>
+    <a href="toteutukset/index.html" class="button-link">Edellisiä retkiä</a>
+  </nav>
+
+
+<div class="home-content">
+    <h1 class="otsikko">Pate</h1>
+    <h2 class="alaotsikko fade-in delay-2">Seikkailuja luonnon ehdoilla</h2>
+
+    <div class="sosiaalit fade-in delay-3">
+           <a href="https://www.instagram.com/erapate_" target="_blank" class="social-card">
+         <img src="ikonit/instagram.svg" alt="Instagram" class="icon">
+        </a>
+
+        <a href="https://www.youtube.com/@erapate" target="_blank" class="social-card">
+            <img src="ikonit/youtube.svg" alt="youtube" class="icon">
+           </a>
+
+           <a href="https://www.snapchat.com/@pateksi?share_id=" target="_blank" class="social-card">
+            <img src="ikonit/snapchat.svg" alt="snapchat" class="icon">
+           </a>
+
+           <a href="https://www.tiktok.com/@erapate" target="_blank" class="social-card email">
+            <img src="ikonit/tiktok.svg" alt="Sähköposti" class="icon">
+        </a>
+    </div>
+
+    <p class="email-text">
+        <a href="mailto:erapate0@gmail.com" class="email-link">erapate0@gmail.com</a>
+    </p>
+</div>
+
+   
+
+
+
+
+
+
+
+
+<footer class="footer">
+    © 2025 erapate
+  </footer>
+
+
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("sideMenu");
+    
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("active");
+      menu.classList.toggle("open");
+    });
+    </script>
+
+</body>
+</html>

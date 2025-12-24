@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retket</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="icon" href="../kawa.ico">
+</head>
+<body class="retket">
+
+ <a href="../index.html" class="logo-link">
+    <img src="../meikä.jpg" alt="Logo" class="logo">
+</a>
+
+
+<div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  
+  <nav class="side-menu" id="sideMenu">
+    
+    <a href="../index.html" class="button-link">Etusivulle</a>
+    <a href="../info/index.html" class="button-link">Tietoa minusta & FAQ</a>
+    <a href="./index.html" class="button-link">Edellisiä retkiä</a>
+  </nav>
+
+
+
+
+
+  <section class="videos">
+    <h2>Viimeisimmät videot</h2>
+  
+    <div class="video-card fade-in delay-1">
+      <h3>Pakkasyö Metsässä – Tuulastetaan Ruoka ja Yövytään Majassa</h3>
+      <a href="https://www.youtube.com/watch?v=FxNKwwI6RfQ" target="_blank">
+        <img src="https://img.youtube.com/vi/FxNKwwI6RfQ/hqdefault.jpg" alt="YouTube video">
+      </a>
+    </div>
+  
+    <div class="video-card fade-in delay-2">
+      <h3>Yötä Luonnossa Ilman Ruokaa - Selviytyminen Luonnon Antimilla</h3>
+      <a href="https://www.youtube.com/watch?v=fPCOZsV2ucU" target="_blank">
+        <img src="https://img.youtube.com/vi/fPCOZsV2ucU/hqdefault.jpg" alt="YouTube video">
+      </a>
+    </div>
+  
+    <div class="video-card fade-in delay-3">
+      <h3>Yötä Järvellä Ilman Ruokaa</h3>
+      <a href="https://www.youtube.com/watch?v=01nmuvvP2l4" target="_blank">
+        <img src="https://img.youtube.com/vi/01nmuvvP2l4/hqdefault.jpg" alt="YouTube video">
+      </a>
+    </div>
+  
+  </section>
+  
+
+
+
+
+    <canvas id="star-canvas"></canvas>
+
+    <script src="../script.js"></script>
+
+
+    <footer class="footer">
+        © 2025 erapate
+      </footer>
+
+      <script>
+        const toggle = document.getElementById("menuToggle");
+        const menu = document.getElementById("sideMenu");
+        
+        toggle.addEventListener("click", () => {
+          toggle.classList.toggle("active");
+          menu.classList.toggle("open");
+        });
+        </script>
+</body>
+</html>

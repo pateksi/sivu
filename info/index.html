@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infottiskiin</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="icon" href="../kawa.ico">
+</head>
+<body>
+    
+  <a href="../index.html" class="logo-link">
+    <img src="../meikä.jpg" alt="Logo" class="logo">
+</a>
+
+
+<div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  
+  <nav class="side-menu" id="sideMenu">
+    
+    <a href="../index.html" class="button-link">Etusivulle</a>
+    <a href="./index.html" class="button-link">Tietoa minusta & FAQ</a>
+    <a href="../toteutukset/index.html" class="button-link">Edellisiä retkiä</a>
+  </nav>
+
+
+<section class="info">
+    <h1>Tietoa minusta</h1>
+
+    <p>
+        Moi! Oon Pate ja tykkään kalastuksesta, retkeilystä ja ylipäätään luonnossa liikkumisesta.
+        Teen myös videoita näistä aiheista. Olen myös opiskelija, se hieman syö videoiden tekoaikaani
+        ajoittain.
+    </p>
+
+       <p>
+          Mua voi seurata Tiktokissa, Youtubessa ja Instagramissa. Näihin löytyy linkit etusivulta. Yhteyden muhun saa sähköpostilla
+         
+            <a href="mailto:erapate0@gmail.com" class="email-link">
+              erapate0@gmail.com
+            </a>
+      
+        </p>
+
+    <h2>FAQ</h2>
+
+    <div class="faq">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Millä vieheellä kalastat?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Itse suosin heittokalastuksessa paljon jigejä ja käytän niitä eniten</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Missä kalastat?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Olen kalastanut monissa eri paikoissa mutta useimmiten Keski-Suomen järvillä</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Mikä on isoin kala mitä olet saanut?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Tällä hetkellä ennätys on 18.5kg merilohi.</p>
+                
+            </div>
+        </div>
+
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Tuleeko lisää harppuunakalastusta?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>KYLLÄ! Täytyy ensi kesänä kuvailla sitä enemmänkin.</p>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <canvas id="star-canvas"></canvas>
+
+    <script src="../script.js"></script>
+
+
+
+      <script>
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const item = button.parentElement;
+        item.classList.toggle("active"); //avaus
+    });
+});
+</script>
+
+
+
+
+
+     <footer class="footer">
+        © 2025 erapate
+      </footer>
+
+      <script>
+        const toggle = document.getElementById("menuToggle");
+        const menu = document.getElementById("sideMenu");
+        
+        toggle.addEventListener("click", () => {
+          toggle.classList.toggle("active");
+          menu.classList.toggle("open");
+        });
+        </script>
+</body>
+</html>
